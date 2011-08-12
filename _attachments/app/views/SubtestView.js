@@ -1,16 +1,14 @@
 var SubtestView = Backbone.View.extend({
-  el: "body",
+  el: $("body"),
   template: loadTemplate("editor.template.html"),
   initialize: function (){
     this.model.view = this;
   },
   events: {
-    // Why oh why does this fire twice?
-    "click button:contains('Save')" : "save"
+    "click button:contains('Save')" : "save",
   },
   save: function() {
-    this.model.set({"content": this.$("textarea").val()});
-    this.model.save();
+    this.model.set({"content": this.$("textarea").val()}).save();
   },
   render: function(){
     $(this.el).html(this.template(this.model.toJSON()));
