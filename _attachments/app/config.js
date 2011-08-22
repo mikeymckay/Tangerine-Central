@@ -1,6 +1,8 @@
 /** Configure the database **/
-Backbone.couch_connector.config.db_name = "egra";
-Backbone.couch_connector.config.ddoc_name = "central";
+var DATABASE_NAME = "egra";
+var DESIGN_DOC = "central";
+Backbone.couch_connector.config.db_name = DATABASE_NAME;
+Backbone.couch_connector.config.ddoc_name = DESIGN_DOC;
 Backbone.couch_connector.config.global_changes = false;
 
 // This allows us to have separate template files
@@ -11,6 +13,6 @@ var loadTemplate = function(filename){
     success: function(result){
       templateFunction = Handlebars.compile(result);
     }
-  })
+  });
   return templateFunction;
 }
