@@ -1,0 +1,22 @@
+[
+  {
+    "from": "",
+    "to": "index.html"
+  },
+  {
+    "from": "app/*",
+    "to": "app/*"
+  },
+  {
+    "from": "js-libraries/*",
+    "to": "js-libraries/*"
+  },
+  {
+    "from": "/egra/_design/central/_view/*",
+    "to": "_view/*"
+  },
+  {
+    "from": "/*",
+    "to": "*"
+  }
+]
