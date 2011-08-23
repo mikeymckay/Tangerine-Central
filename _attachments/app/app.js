@@ -14,6 +14,7 @@ var Router = Backbone.Router.extend({
   },
 
   edit: function(id) {
+    console.log("YO");
     // Use a default to make testing easier
     id = (id == null || id == "") ? "Assessment.The Gambia EGRA May 2011.ReadingComprehensionInstructions" : id;
     // Set the _id and then call fetch to use the backbone connector to retrieve it from couch

@@ -12,11 +12,22 @@
     "to": "js-libraries/*"
   },
   {
+    "description": "For images/stylesheets",
+    "from": "design/*",
+    "to": "design/*"
+  },
+  {
     "from": "/egra/_design/central/_view/*",
     "to": "_view/*"
   },
   {
+    "description": "For regular design documents",
+    "from": "egra/*",
+    "to": "../../*"
+  },
+  {
+    "description": "For regular design documents",
     "from": "/*",
-    "to": "*"
+    "to": "../../*"
   }
 ]
